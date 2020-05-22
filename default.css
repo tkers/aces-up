@@ -29,6 +29,16 @@ body {
   mix-blend-mode: multiply;
 }
 
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 16px 8px;
+  font-style: italic;
+  letter-spacing: 1px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
 .dpad {
   position: absolute;
   left: 16px;
