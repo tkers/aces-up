@@ -17,8 +17,8 @@ body {
   background-color: #d2da7b;
   /* background-color: #e3eec0; */
   /* background-color: #c4cfa1; */
-  box-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
-  margin-bottom: 32px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
 }
 
 #lcd {
@@ -114,8 +114,14 @@ body {
 .startselect div {
   display: inline-block;
   font-weight: bold;
-  color: #999;
-  margin: 16px 8px;
+  width: 60px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #999;
+  box-shadow: -1px 2px 0px rgba(255, 255, 255, 0.9);
+  color: transparent;
+  text-shadow: 0 20px #3b3777;
+  margin: 24px 8px;
   text-transform: uppercase;
-  transform: rotate(-30deg);
+  transform: rotate(-25deg);
 }
