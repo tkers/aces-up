@@ -12,7 +12,8 @@ body {
 .lcd-background {
   /* width: 320px; */
   /* height: 288px; */
-  padding-top: env(safe-area-inset-top);
+  padding: 8px;
+  padding-top: max(env(safe-area-inset-top), 8px);
   background-color: #d2da7b;
   /* background-color: #e3eec0; */
   /* background-color: #c4cfa1; */
