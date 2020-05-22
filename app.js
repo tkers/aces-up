@@ -37,8 +37,22 @@ gb.gpu.on("frame", img => {
   lcd.drawImage(img, 0, 0);
 });
 
+const getRomPath = name => {
+  switch (name) {
+    case "soko":
+      return "./sokoban.gb";
+    case "maze":
+      return "./10-print.gb";
+    case "simon":
+      return "./simon.gb";
+    default:
+      return "./aces-up.gb";
+  }
+};
+
 // Load the ROM
-fetch(new Request("./aces-up.gb"))
+const rom = getRomPath(window.location.hash.slice(1));
+fetch(new Request(rom))
   .then(res => res.arrayBuffer())
   .then(rom => {
     gb.loadCart(rom);
