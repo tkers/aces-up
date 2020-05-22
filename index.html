@@ -2,14 +2,45 @@
 <html>
   <head>
     <title>Aces Up</title>
+    <meta charset="utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <!-- <link rel="icon" href="icon.png" type="image/png" /> -->
+    <!-- <link rel="shortcut icon" href="icon.png" type="image/png" /> -->
+    <!-- <link rel="apple-touch-icon" href="icon.png" type="image/png" /> -->
+    <link href="default.css" rel="stylesheet" type="text/css" media="all" />
   </head>
   <body>
-    <canvas
-      id="lcd"
-      width="160"
-      height="144"
-      style="height: 288px; border: 1px solid #c0c0c0; image-rendering: pixelated;"
-    ></canvas>
+    <div class="lcd-background">
+      <canvas id="lcd" width="160" height="144"></canvas>
+    </div>
+
+    <div class="dpad">
+      <div id="k-up">up</div>
+      <br />
+      <div id="k-left">left</div>
+      <div class="dmiddle"></div>
+      <div id="k-right">right</div>
+      <br />
+      <div id="k-down">down</div>
+    </div>
+
+    <div class="ab">
+      <div id="k-b">B</div>
+      <div id="k-a">A</div>
+    </div>
+
+    <div class="startselect">
+      <div id="k-start">start</div>
+      <div id="k-select">select</div>
+    </div>
 
     <script src="./gameboy.min.js"></script>
     <script src="./app.js"></script>
